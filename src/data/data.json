@@ -1,0 +1,25 @@
+[
+     {
+          "date": "2018-Present",
+          "title": "Personal and university project on web development.",
+          "dis": [
+               "Gain full Knowledge on JavaScript, ReactJs, Redux.",
+               "Comperhensive understanding on NextJs, Static page, and Server side rendering.",
+               "Considerable foundation on web development basics such as HTML, Css, Sass, Tailwind, and Material-ui."
+          ]
+     },
+     {
+          "date": "2018-Present",
+          "title": "Low Earth orbit satellite motion simulation with Matlab.",
+          "dis": [
+               "Optimization algorithms such as: Genetic and Particle swarm optimization.",
+               "Practical usage of solving nonlinear and entangled PDE equations.",
+               "Iterative algorithms."
+          ]
+     },
+     {
+          "date": "2016-2018",
+          "title": "Setting up Earthquake database and data analyze with Matlab.",
+          "dis": ["Algorithmic thinking and structural programming."]
+     }
+]
