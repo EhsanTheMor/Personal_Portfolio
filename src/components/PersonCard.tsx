@@ -10,19 +10,33 @@ const PersonCard = () => {
                          <h1 className='text-3xl'>Ehsan</h1>
                          <p className='ml-auto'>FullStack Developer</p>
                     </div>
-                    <div className='iamge-holder w-[200px] h-[200px] bg-green-100 mx-auto rounded-xl mt-8'></div>
-                    <h2 className='justify-center text-2xl mt-8 flex flex-wrap'>
+                    <div className='iamge-holder w-[90%] h-[90%] bg-green-100 mx-auto rounded-xl mt-5 sm:w-[200px] sm:h-[200px]'>
+                         <img
+                              src='profile.jpg'
+                              className='rounded-xl'
+                              alt='UserProfile'
+                         />
+                    </div>
+                    <h2 className='justify-center text-2xl mt-5 flex flex-wrap'>
                          Ehsan.
                          <span>Morshedzadeh</span>
                          <span>@gmail.com</span>
                     </h2>
-                    <h2 className='text-center text-2xl mt-8'>09308397903</h2>
-                    <div className='text-2xl mt-8 flex justify-center items-center'>
+                    <h2 className='text-center text-2xl mt-5'>09308397903</h2>
+                    <div className='text-2xl mt-5 flex justify-center items-center'>
                          <BiLocationPlus />
                          <span>: Tehran</span>
                     </div>
-                    <div className='text-4xl flex justify-center mt-8 p-2 border-2 border-selected-border rounded-full text-selected-paragraph hover:cursor-pointer transition-all duration-500 hover:border-selected-primary hover:text-selected-primary'>
+                    <div className='text-4xl flex justify-center mt-5 p-2 border-2 border-selected-border rounded-full text-selected-paragraph hover:cursor-pointer transition-all duration-500 hover:border-selected-primary hover:text-selected-primary'>
                          <AiOutlineGithub />
+                    </div>
+                    <div className='text-4xl flex justify-center mt-5 p-2 border-2 border-selected-border rounded-full text-selected-paragraph hover:cursor-pointer transition-all duration-500 hover:border-selected-primary hover:text-selected-primary'>
+                         <a
+                              href='Ehsan Morshedzadeh.pdf'
+                              className='text-xl sm:text-2xl'
+                         >
+                              Download Resume
+                         </a>
                     </div>
                </div>
           </div>

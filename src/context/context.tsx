@@ -8,7 +8,6 @@ import {
 } from 'react';
 
 interface scrollContextInterface {
-     scroll: number;
      active: string;
      setActive: Dispatch<SetStateAction<string>>;
 }
@@ -25,10 +24,9 @@ interface Props {
 
 export const ScrollContextProvider = ({ children }: Props) => {
      const [active, setActive] = useState<string>('');
-     const [scroll, setScroll] = useState<number>(0);
 
      return (
-          <scrollContext.Provider value={{ active, scroll, setActive }}>
+          <scrollContext.Provider value={{ active, setActive }}>
                {children}
           </scrollContext.Provider>
      );

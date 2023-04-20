@@ -62,9 +62,9 @@ const MDScreenMenu = () => {
                ></div>
                <div
                     onClick={() => clickHandler()}
-                    className='fixed right-0 -translate-x-full top-10 lg:hidden'
+                    className='fixed right-0 -translate-x-1/2 top-10 lg:hidden'
                >
-                    <h1 className=' aspect-square border-2 border-selected-border grid place-items-center p-4 rounded-full transition-all duration-500 text-selected-paragraph bg-selected-dark hover:border-selected-primary hover:text-selected-primary hover:cursor-pointer'>
+                    <h1 className='aspect-square border-2 border-selected-border grid place-items-center p-2 rounded-full transition-all duration-500 text-selected-paragraph bg-selected-dark hover:border-selected-primary hover:text-selected-primary hover:cursor-pointer sm:p-4 z-10'>
                          Menu
                     </h1>
                </div>

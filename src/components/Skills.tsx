@@ -1,17 +1,14 @@
-import { Icon } from 'next/dist/lib/metadata/types/metadata-types';
 import React, { ReactNode, useEffect, useState } from 'react';
-import { IconType } from 'react-icons';
 import { FaReact } from 'react-icons/fa';
-import { SiTailwindcss, SiJavascript } from 'react-icons/si';
+import { SiTailwindcss, SiMongodb, SiRedux } from 'react-icons/si';
 import {
      TbBrandNextjs,
      TbBrandJavascript,
      TbBrandKotlin,
 } from 'react-icons/tb';
-import { ImHtmlFive2 } from 'react-icons/im';
-import { IoLogoCss3 } from 'react-icons/io';
 import { useScrollContext } from '@/context/context';
 import useObserver from '@/hooks/useObserver';
+import { DiNodejsSmall } from 'react-icons/di';
 
 const Skills = () => {
      const { setActive } = useScrollContext();
@@ -30,6 +27,13 @@ const Skills = () => {
                </h4>
                <div className='skill-container grid grid-cols-2 gap-5 lg:grid-cols-4 md:grid-cols-3'>
                     <SkillsCard
+                         percent={95}
+                         icon={
+                              <TbBrandJavascript className='text-2xl lg:text-7xl' />
+                         }
+                         title='JavaScript'
+                    />
+                    <SkillsCard
                          percent={100}
                          icon={<FaReact className='text-2xl lg:text-7xl' />}
                          title='React'
@@ -44,19 +48,9 @@ const Skills = () => {
                     <SkillsCard
                          percent={95}
                          icon={
-                              <SiTailwindcss className='text-2xl lg:text-7xl' />
+                              <DiNodejsSmall className='text-2xl lg:text-7xl' />
                          }
-                         title='Tailwind'
-                    />
-                    <SkillsCard
-                         percent={95}
-                         icon={<ImHtmlFive2 className='text-2xl lg:text-7xl' />}
-                         title='HTML'
-                    />
-                    <SkillsCard
-                         percent={95}
-                         icon={<IoLogoCss3 className='text-2xl lg:text-7xl' />}
-                         title='CSS'
+                         title='NodeJs'
                     />
                     <SkillsCard
                          percent={95}
@@ -67,10 +61,13 @@ const Skills = () => {
                     />
                     <SkillsCard
                          percent={95}
-                         icon={
-                              <TbBrandJavascript className='text-2xl lg:text-7xl' />
-                         }
-                         title='JavaScript'
+                         icon={<SiMongodb className='text-2xl lg:text-7xl' />}
+                         title='MongoDB'
+                    />
+                    <SkillsCard
+                         percent={95}
+                         icon={<SiRedux className='text-2xl lg:text-7xl' />}
+                         title='Redux'
                     />
                     <SkillsCard
                          percent={95}

@@ -29,7 +29,7 @@ const Introduction = () => {
                >
                     INTRODUCE
                </h4>
-               <h1 className='text-[50px] leading-[1.3] mb-[4rem] lg:text-[78px] lg:leading-[90px]'>
+               <h1 className='text-[30px] leading-[1.2] mb-[4rem] md:text-[50px] md:leading-[1.3] lg:text-[78px] lg:leading-[90px]'>
                     Say Hi from
                     <span className='text-selected-primary'> Ehsan</span>,
                     FrontEnd and BackEnd Developer

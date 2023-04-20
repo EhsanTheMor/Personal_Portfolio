@@ -15,7 +15,7 @@ const data = [
      },
      {
           id: 2,
-          date: '2018-Present',
+          date: '2018-2020',
           title: 'Low Earth orbit satellite motion simulation with Matlab.',
           dis: [
                'Optimization algorithms such as: Genetic and Particle swarm optimization.',
@@ -47,7 +47,7 @@ const Experience = () => {
                <h4 className=' px-5 py-2 rounded-full border-selected-border border-2 inline-block mb-[5rem]'>
                     EXPERIENCES
                </h4>
-               <h1 className='text-[48px] leading-[60px] mb-[4rem]'>
+               <h1 className='text-[30px] leading-[1.2] md:text-[48px] md:leading-[60px] mb-[4rem]'>
                     <span className='text-selected-primary'>Experiences</span>
                </h1>
                {data.map((el, index) => (
@@ -72,36 +72,44 @@ const ExperienceCard = ({ date, title, description }: experienceCardProps) => {
      const [active, setActive] = useState<boolean>(false);
 
      return (
-          <div
-               onMouseEnter={() => setActive(true)}
-               onMouseLeave={() => setActive(false)}
-               className='px-5 relative box-content pb-[50px] md:px-20'
-          >
-               <span
-                    style={{ transform: 'translate(-50%, calc(-50% + 5px))' }}
-                    className={`w-[2px] h-full inline-block absolute left-0 top-1/2 ${
-                         active ? 'bg-selected-primary' : 'bg-selected-border'
-                    } transition-all duration-500`}
-               ></span>
-               <span
-                    className={`inline-block w-4 aspect-square rounded-full absolute left-0 top-0 translate-y-1 -translate-x-1/2 ${
-                         active ? 'bg-selected-primary' : 'bg-selected-border'
-                    } transition-all duration-500`}
-               ></span>
-               <h5 className='text-selected-paragraph text-[16px] mb-7'>
-                    {date}
-               </h5>
-               <h2 className='text-[24px] mb-[5px]'>{title}</h2>
-               <ul className='pl-4'>
-                    {description.map((el, index) => (
-                         <li
-                              key={index}
-                              className='text-selected-paragraph text-[18px] list-disc'
-                         >
-                              {el}
-                         </li>
-                    ))}
-               </ul>
+          <div className='holder'>
+               <div
+                    onMouseEnter={() => setActive(true)}
+                    onMouseLeave={() => setActive(false)}
+                    className='px-5 relative box-content pb-[50px] md:px-20'
+               >
+                    <span
+                         style={{
+                              transform: 'translate(-50%, calc(-50% + 5px))',
+                         }}
+                         className={`w-[2px] h-full inline-block absolute left-0 top-1/2 ${
+                              active
+                                   ? 'bg-selected-primary'
+                                   : 'bg-selected-border'
+                         } transition-all duration-500`}
+                    ></span>
+                    <span
+                         className={`inline-block w-4 aspect-square rounded-full absolute left-0 top-0 translate-y-1 -translate-x-1/2 ${
+                              active
+                                   ? 'bg-selected-primary'
+                                   : 'bg-selected-border'
+                         } transition-all duration-500`}
+                    ></span>
+                    <h5 className='text-selected-paragraph text-[16px] mb-7'>
+                         {date}
+                    </h5>
+                    <h2 className='text-[24px] mb-[5px]'>{title}</h2>
+                    <ul className='pl-4'>
+                         {description.map((el, index) => (
+                              <li
+                                   key={index}
+                                   className='text-selected-paragraph text-[18px] list-disc'
+                              >
+                                   {el}
+                              </li>
+                         ))}
+                    </ul>
+               </div>
           </div>
      );
 };

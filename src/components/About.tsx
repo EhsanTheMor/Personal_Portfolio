@@ -17,7 +17,7 @@ const About = () => {
                <h4 className=' px-5 py-2 rounded-full border-selected-border border-2 inline-block mb-[5rem]'>
                     ABOUT
                </h4>
-               <h1 className='text-[48px] leading-[60px] mb-[4rem]'>
+               <h1 className='text-[30px] leading-[1.2] md:text-[48px] md:leading-[60px] mb-[4rem]'>
                     Every great design begin with an even
                     <span className='text-selected-primary'> better story</span>
                </h1>
