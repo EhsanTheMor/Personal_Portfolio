@@ -1,3 +1,5 @@
-export default function (str: string) {
-     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+export default function () {
+     return (str: string): string => {
+          return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+     };
 }

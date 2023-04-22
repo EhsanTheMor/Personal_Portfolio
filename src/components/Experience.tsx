@@ -1,5 +1,6 @@
 import { useScrollContext } from '@/context/context';
 import useObserver from '@/hooks/useObserver';
+import Observer from '@/util/Observer';
 import { useEffect, useState } from 'react';
 
 const data = [
@@ -35,8 +36,8 @@ const Experience = () => {
      const { setActive } = useScrollContext();
 
      useEffect(() => {
-          const observer = useObserver(setActive, 'EXPERIENCES');
-          observer();
+          const observer = Observer(setActive, 'EXPERIENCES');
+          observer('EXPERIENCES');
      }, []);
 
      return (

@@ -9,13 +9,14 @@ import {
 import { useScrollContext } from '@/context/context';
 import useObserver from '@/hooks/useObserver';
 import { DiNodejsSmall } from 'react-icons/di';
+import Observer from '@/util/Observer';
 
 const Skills = () => {
      const { setActive } = useScrollContext();
 
      useEffect(() => {
-          const observer = useObserver(setActive, 'SKILLS');
-          observer();
+          const observer = Observer(setActive, 'SKILLS');
+          observer('SKILLS');
      }, []);
 
      return (

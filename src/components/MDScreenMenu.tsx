@@ -3,6 +3,7 @@ import useCapitalize from '@/hooks/useCapitalize';
 import React, { useRef } from 'react';
 
 const MDScreenMenu = () => {
+     const capitalize = useCapitalize();
      const { active } = useScrollContext();
      const menu = useRef<HTMLDivElement>(null);
      const blurElement = useRef<HTMLDivElement>(null);
@@ -48,7 +49,7 @@ const MDScreenMenu = () => {
                                         : 'text-white'
                               } hover:text-selected-primary hover:cursor-pointer`}
                          >
-                              {useCapitalize(item)}
+                              {capitalize(item)}
                          </h2>
                     ))}
                </div>

@@ -1,5 +1,6 @@
 import { useScrollContext } from '@/context/context';
 import useObserver from '@/hooks/useObserver';
+import Observer from '@/util/Observer';
 import { Icon } from 'next/dist/lib/metadata/types/metadata-types';
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { GiLaserBurst, GiLaserPrecision } from 'react-icons/gi';
@@ -8,8 +9,8 @@ const Education = () => {
      const { setActive } = useScrollContext();
 
      useEffect(() => {
-          const observer = useObserver(setActive, 'EDUCATION');
-          observer();
+          const observer = Observer(setActive, 'EDUCATION');
+          observer('EDUCATION');
      }, []);
 
      return (

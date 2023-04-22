@@ -1,24 +1,14 @@
 import { useScrollContext } from '@/context/context';
+import useObserver from '@/hooks/useObserver';
+import Observer from '@/util/Observer';
 import React, { use, useEffect } from 'react';
 
 const Introduction = () => {
      const { setActive } = useScrollContext();
 
      useEffect(() => {
-          const observer = new IntersectionObserver(entries => {
-               entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                         setActive('INTRODUCE');
-                    }
-               });
-          });
-
-          const tag = document.querySelector('#INTRODUCE');
-          if (tag) {
-               observer.observe(tag);
-          } else {
-               console.log('Something went wrong');
-          }
+          const observer = Observer(setActive, 'INTRODUCE');
+          observer('INTRODUCE');
      }, []);
 
      return (

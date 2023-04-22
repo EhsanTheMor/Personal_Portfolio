@@ -1,13 +1,14 @@
 import useObserver from '@/hooks/useObserver';
 import { useScrollContext } from './../context/context';
 import React, { useEffect } from 'react';
+import Observer from '@/util/Observer';
 
 const About = () => {
      const { setActive } = useScrollContext();
 
      useEffect(() => {
-          const observer = useObserver(setActive, 'ABOUT');
-          observer();
+          const observer = Observer(setActive, 'ABOUT');
+          observer('ABOUT');
      }, []);
 
      return (

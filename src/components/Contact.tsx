@@ -2,13 +2,14 @@ import useObserver from '@/hooks/useObserver';
 import { useScrollContext } from './../context/context';
 import React, { ReactNode, useEffect } from 'react';
 import { HiOutlineMail, HiOutlineDeviceMobile } from 'react-icons/hi';
+import Observer from '@/util/Observer';
 
 const Contact = () => {
      const { setActive } = useScrollContext();
 
      useEffect(() => {
-          const observer = useObserver(setActive, 'CONTACT');
-          observer();
+          const observer = Observer(setActive, 'CONTACT');
+          observer('CONTACT');
      }, []);
 
      return (
