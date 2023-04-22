@@ -25,13 +25,13 @@ const About = () => {
                <h5 className='leading-[30px] text-[16px] text-selected-paragraph'>
                     As a full-stack web developer, I specialize in crafting
                     elegant and functional websites and web applications. With
-                    expertise in both front-end and back-end development, I'm
-                    committed to creating responsive, user-friendly interfaces
-                    that drive engagement and deliver results. From database
-                    design and development to server-side programming and
-                    deployment, I love working with cutting-edge technology and
-                    delivering solutions that exceed expectations. Simply put, I
-                    build great websites because I love what I do.
+                    expertise in both front-end and back-end development,
+                    I&apos;m committed to creating responsive, user-friendly
+                    interfaces that drive engagement and deliver results. From
+                    database design and development to server-side programming
+                    and deployment, I love working with cutting-edge technology
+                    and delivering solutions that exceed expectations. Simply
+                    put, I build great websites because I love what I do.
                </h5>
           </div>
      );

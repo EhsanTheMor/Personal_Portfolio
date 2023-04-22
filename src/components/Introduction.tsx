@@ -25,8 +25,8 @@ const Introduction = () => {
                     FrontEnd and BackEnd Developer
                </h1>
                <h5 className='leading-[30px] text-[16px] text-selected-paragraph'>
-                    I'm always up for a programming challenge, wherever it may
-                    be.
+                    I&apos;m always up for a programming challenge, wherever it
+                    may be.
                </h5>
                <a
                     href='#'
